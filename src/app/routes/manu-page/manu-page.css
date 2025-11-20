@@ -1,17 +1,16 @@
-body,
-html {
-  margin: 0;
-  padding: 0;
+:host {
+  display: block;
 }
 
 * {
   font-family: 'Aldrich', monospace;
+  box-sizing: border-box;
 }
 
 .container {
   background-color: #111f44;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   text-align: center;
   color: white;
   display: flex;
@@ -35,7 +34,8 @@ html {
 }
 
 .subtitle {
-  font-size: 34px; /*son los tamaños del figma*/
+  font-size: 34px;
+  /*son los tamaños del figma*/
   margin-top: 8px;
   opacity: 0.8;
 }
