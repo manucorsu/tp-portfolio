@@ -11,10 +11,12 @@ export const routes: Routes = [
   {
     path: 'poe',
     component: PoePage,
+    title: 'Poema Palermo',
   },
   {
     path: 'manu',
     component: ManuPage,
+    title: 'Manuel Corsunsky Gayá',
   },
   {
     path: '**',
