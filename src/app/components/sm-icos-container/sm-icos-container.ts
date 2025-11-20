@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { SmIco } from '../sm-ico/sm-ico';
+import { SocialMediaIcon } from '../../types/social-media';
 
 @Component({
   selector: 'app-sm-icos-container',
@@ -8,8 +9,5 @@ import { SmIco } from '../sm-ico/sm-ico';
   imports: [SmIco],
 })
 export class SmIcosContainer {
-  @Input() icons!: {
-    readonly sm: 'GitHub' | 'LinkedIn' | 'email';
-    readonly href: string;
-  }[];
+  @Input() icons!: SocialMediaIcon[];
 }

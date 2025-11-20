@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { SmIcosContainer } from '../../components/sm-icos-container/sm-icos-container';
+import { SocialMediaIcon } from '../../types/social-media';
 
 @Component({
   selector: 'manu-page',
@@ -8,10 +9,7 @@ import { SmIcosContainer } from '../../components/sm-icos-container/sm-icos-cont
   imports: [SmIcosContainer],
 })
 export class ManuPage {
-  protected readonly icons: {
-    readonly sm: 'email' | 'LinkedIn' | 'GitHub';
-    readonly href: string;
-  }[] = [
+  protected readonly icons: SocialMediaIcon[] = [
     {
       sm: 'email',
       href: 'mailto:manuelcorsunsky@gmail.com',

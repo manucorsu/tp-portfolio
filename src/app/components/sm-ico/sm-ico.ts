@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { SocialMediaIconType } from '../../types/social-media';
 
 @Component({
   selector: 'app-sm-ico',
@@ -11,6 +12,6 @@ export class SmIco {
     LinkedIn: 'ico-linkedin.svg',
     email: 'ico-mail.svg',
   };
-  @Input() public icon!: 'GitHub' | 'LinkedIn' | 'email';
+  @Input() public icon!: SocialMediaIconType;
   @Input() public href!: string;
 }
