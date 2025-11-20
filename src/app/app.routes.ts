@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import { SelectPortfolioPage } from './features/select-portfolio-page/select-portfolio-page';
-import { PoePage } from './features/poe-page/poe-page';
-import { ManuPage } from './features/manu-page/manu-page';
+import { SelectPortfolioPage } from './routes/select-portfolio-page/select-portfolio-page';
+import { PoePage } from './routes/poe-page/poe-page';
+import { ManuPage } from './routes/manu-page/manu-page';
 
 export const routes: Routes = [
   {

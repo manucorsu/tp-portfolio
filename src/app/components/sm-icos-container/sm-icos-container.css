@@ -1,0 +1,16 @@
+.icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.icons img {
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icons img:hover {
+  transform: scale(1.15);
+}
