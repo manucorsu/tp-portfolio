@@ -1,0 +1,87 @@
+:host {
+  display: block;
+  max-width: 100%;
+}
+
+.mpill-container {
+  position: relative;
+  border-radius: 20px; /* Match the pill shape */
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.mpill-container:hover {
+  transform: scale(1.03);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  width: 100%; /* Ensure it fills the container */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+  -webkit-mask-image: var(--mask-url);
+  mask-image: var(--mask-url);
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.overlay.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.description {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin: 0;
+}
+
+.stack-container {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.stack-pill {
+  background-color: #3f2e53;
+  color: #c4d0ec;
+  padding: 6px 16px;
+  border-radius: 50px;
+  font-size: 13px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  white-space: nowrap;
+  border: 1px solid #67446a;
+  box-shadow:
+    inset 0 0 0 1px #857194,
+    inset 0 0 0 2px #68426c,
+    0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: white;
+}

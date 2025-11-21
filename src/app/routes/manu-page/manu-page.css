@@ -63,4 +63,19 @@
 
 .secondary {
   font-family: 'Inter', sans-serif;
+  size: 35px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+  max-width: 1000px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
+.projects-grid app-mpill:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
 }

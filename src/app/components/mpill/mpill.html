@@ -1,0 +1,18 @@
+<div class="mpill-container" (click)="onClick()">
+  <img [src]="path" [alt]="data.name" />
+  <div class="overlay" [class.visible]="showDetails" [style.--mask-url]="'url(' + path + ')'">
+    @if (url) {
+      <p class="description">
+        {{ data.description }}.
+        <a [href]="url" target="_blank" (click)="$event.stopPropagation()">Ver proyecto</a>
+      </p>
+    } @else {
+      <p class="description">{{ data.description }}.</p>
+    }
+    <div class="stack-container">
+      @for (tech of data.tech; track tech) {
+        <span class="stack-pill">{{ tech }}</span>
+      }
+    </div>
+  </div>
+</div>
