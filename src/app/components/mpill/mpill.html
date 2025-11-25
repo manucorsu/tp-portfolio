@@ -11,7 +11,7 @@
     }
     <div class="stack-container">
       @for (tech of data.tech; track tech) {
-        <span class="stack-pill">{{ tech }}</span>
+        <app-stack-pill [text]="tech"></app-stack-pill>
       }
     </div>
   </div>

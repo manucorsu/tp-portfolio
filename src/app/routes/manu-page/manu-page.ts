@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { SmIcosContainer } from '../../components/sm-icos-container/sm-icos-container';
 import { SocialMediaIcon } from '../../types/social-media';
 import { MPill, MPillData } from '../../components/mpill/mpill';
+import { MFormacion } from '../../components/mformacion/mformacion';
 
 @Component({
   selector: 'manu-page',
   templateUrl: './manu-page.html',
   styleUrl: './manu-page.css',
-  imports: [SmIcosContainer, MPill],
+  imports: [SmIcosContainer, MPill, MFormacion],
 })
 export class ManuPage {
   protected readonly icons: SocialMediaIcon[] = [

@@ -1,0 +1,124 @@
+*{
+  color:#c4d0ec;
+}
+
+:host {
+  display: block;
+  font-family: 'Inter', 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+.formation-card {
+  max-width: 820px;
+  margin: 36px auto;
+  padding: 36px 44px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.content {
+  display: flex;
+  gap: 36px;
+  align-items: flex-start;
+  position: relative;
+}
+
+.col {
+  flex: 1;
+  padding: 6px 12px;
+}
+
+.col-title {
+  margin: 0 0 12px 0;
+  font-size: 35px;
+  font-weight: 400;
+  font-family: 'Aldrich', sans-serif;
+  text-align: center;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.list li {
+  position: relative;
+  padding-left: 16px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+}
+
+.list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.6em;
+  transform: translateY(-50%);
+  width: 8px;
+  height: 8px;
+  background: radial-gradient(circle at 30% 30%, #f6b7e6 0%, #b980c9 70%);
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(185, 113, 165, 0.45);
+}
+
+.vertical-divider {
+  width: 2px;
+  background: linear-gradient(#9b6da3, #7a3b6a);
+  align-self: stretch;
+  margin: 8px 6px;
+  border-radius: 2px;
+  min-height: 160px;
+}
+
+.bottom-line {
+  height: 2px;
+  margin: 28px 0 12px 0;
+  background: linear-gradient(
+    90deg,
+    rgba(153, 109, 154, 0) 0%,
+    rgba(189, 114, 163, 0.95) 50%,
+    rgba(153, 109, 154, 0) 100%
+  );
+  border-radius: 2px;
+}
+
+.langs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.langs-title {
+  color: #d6e6f8;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Aldrich', sans-serif;
+}
+
+.pills {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 720px) {
+  .content {
+    flex-direction: column;
+  }
+  .vertical-divider {
+    display: none;
+  }
+  .formation-card {
+    padding: 20px;
+  }
+  .title {
+    font-size: 22px;
+  }
+}

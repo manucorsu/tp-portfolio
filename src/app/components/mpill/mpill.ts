@@ -7,10 +7,13 @@ export interface MPillData {
   readonly url?: string;
 }
 
+import { StackPill } from '../stack-pill/stack-pill';
+
 @Component({
   selector: 'app-mpill',
   templateUrl: './mpill.html',
   styleUrls: ['./mpill.css'],
+  imports: [StackPill],
 })
 export class MPill {
   @Input() public data!: MPillData;
