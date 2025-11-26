@@ -1,5 +1,5 @@
-*{
-  color:#c4d0ec;
+* {
+  color: #c4d0ec;
 }
 
 :host {
@@ -46,7 +46,7 @@
   position: relative;
   padding-left: 16px;
   margin-bottom: 12px;
-  font-size: 16px;
+  font-size: 18px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
 }
@@ -59,9 +59,8 @@
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background: radial-gradient(circle at 30% 30%, #f6b7e6 0%, #b980c9 70%);
+  background: #623863;
   border-radius: 50%;
-  box-shadow: 0 0 6px rgba(185, 113, 165, 0.45);
 }
 
 .vertical-divider {
@@ -76,12 +75,10 @@
 .bottom-line {
   height: 2px;
   margin: 28px 0 12px 0;
-  background: linear-gradient(
-    90deg,
-    rgba(153, 109, 154, 0) 0%,
-    rgba(189, 114, 163, 0.95) 50%,
-    rgba(153, 109, 154, 0) 100%
-  );
+  background: linear-gradient(90deg,
+      rgba(153, 109, 154, 0) 0%,
+      rgba(189, 114, 163, 0.95) 50%,
+      rgba(153, 109, 154, 0) 100%);
   border-radius: 2px;
 }
 
@@ -112,12 +109,15 @@
   .content {
     flex-direction: column;
   }
+
   .vertical-divider {
     display: none;
   }
+
   .formation-card {
     padding: 20px;
   }
+
   .title {
     font-size: 22px;
   }

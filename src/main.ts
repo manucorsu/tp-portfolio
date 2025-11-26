@@ -6,4 +6,7 @@ import { App } from './app/app';
 import '@fontsource/aldrich';
 import '@fontsource/inter';
 
+import '@fontsource/akaya-telivigala';
+import '@fontsource/anaheim';
+
 bootstrapApplication(App, appConfig).catch((err) => console.error(err));
