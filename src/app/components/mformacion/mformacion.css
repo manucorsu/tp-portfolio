@@ -65,7 +65,7 @@
 
 .vertical-divider {
   width: 2px;
-  background: linear-gradient(#9b6da3, #7a3b6a);
+  background: #623863;
   align-self: stretch;
   margin: 8px 6px;
   border-radius: 2px;
@@ -75,10 +75,7 @@
 .bottom-line {
   height: 2px;
   margin: 28px 0 12px 0;
-  background: linear-gradient(90deg,
-      rgba(153, 109, 154, 0) 0%,
-      rgba(189, 114, 163, 0.95) 50%,
-      rgba(153, 109, 154, 0) 100%);
+  background: #623863;
   border-radius: 2px;
 }
 

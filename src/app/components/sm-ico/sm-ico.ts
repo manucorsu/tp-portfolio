@@ -11,6 +11,10 @@ export class SmIco {
     GitHub: 'ico-github.svg',
     LinkedIn: 'ico-linkedin.svg',
     email: 'ico-mail.svg',
+    instagramP: 'ico-instagram-p.svg',
+    githubP: 'ico-github-p.svg',
+    linkedinP: 'ico-linkedin-p.svg',
+    mailP: 'ico-mail-p.svg',
   };
   @Input() public icon!: SocialMediaIconType;
   @Input() public href!: string;
