@@ -29,6 +29,6 @@ export class PoePage {
   ];
 
   scrollTo(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 }
