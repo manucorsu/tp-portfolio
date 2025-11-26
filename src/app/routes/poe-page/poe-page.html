@@ -1,11 +1,28 @@
 <div class="poe-container">
   <div class="sec-a">
-    <h1 class="title">Poema Palermo</h1>
-    <p class="subtitle">Villa Martelli, Argentina</p>
+    <div class="header-group">
+      <div class="avatar-wrapper">
+        <img src="pp-poe.jpg" alt="Poema Palermo" />
+      </div>
+      <div class="text-group">
+        <h1 class="title">Poema Palermo</h1>
+        <p class="subtitle">Villa Martelli, Argentina</p>
+      </div>
+
+      <ul class="toc">
+        <li><a (click)="scrollTo(sobreMi)">Sobre mí</a></li>
+      </ul>
+    </div>
     <app-sm-icos-container [icons]="smIcons"></app-sm-icos-container>
   </div>
   <div class="sec-b">
-    <h2 class="title">La fuente del código</h2>
+    <h2 class="title" #sobreMi>La fuente del código</h2>
+    <p class="intro-text">Me apasiona crear experiencias digitales accesibles y atractivas, cuidando cada
+      detalle tanto en el diseño como
+      en la programación. Disfruto especialmente cuando puedo unir lo visual con lo técnico para que cada proyecto no
+      solo se vea bien, sino que también funcione de forma clara, inclusiva y pensada para todas las personas.<br><br>En
+      mi tiempo libre me vas a encontrar cocinando, leyendo, cuidando mis plantas, jugando con mis gatos recorriendo
+      Hyrule en busca de semillas Korok.
+    </p>
   </div>
-</div>
-<a href="/" class="back-link"><small>volver al inicio</small></a>
+  <a href="/" class="back-link">volver al inicio</a>

@@ -27,4 +27,8 @@ export class PoePage {
       href: 'https://ar.linkedin.com/in/lucia-poema-palermo-a34aa6336',
     },
   ];
+
+  scrollTo(el: HTMLElement) {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 }
