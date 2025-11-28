@@ -1,0 +1,43 @@
+* {
+  color: #2d1c10;
+}
+
+.pproject-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.header-row {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+
+.time {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 30px;
+}
+
+.name {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 40px;
+}
+
+.subtitle {
+  font-family: 'Akaya Telivigala', cursive;
+  font-size: 30px;
+}
+
+.description {
+  font-family: 'Anaheim', sans-serif;
+  font-size: 25px;
+  line-height: 1.4;
+}
+
+.tech-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 5px;
+}

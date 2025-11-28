@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 })
 export class StackPill {
   @Input() public text!: string;
+  @Input() public colors: 'm' | 'p' = 'm';
 }

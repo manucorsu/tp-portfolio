@@ -1,0 +1,18 @@
+<div class="pproject-container">
+  <div class="header-row">
+    <span class="time">{{ data.time }}</span>
+    <span class="name">{{ data.name }}</span>
+  </div>
+
+  @if (data.subtitle) {
+    <div class="subtitle">{{ data.subtitle }}</div>
+  }
+
+  <div class="description">{{ data.description }}</div>
+
+  <div class="tech-container">
+    @for (tech of data.tech; track tech) {
+      <app-stack-pill [text]="tech" [colors]="'p'"></app-stack-pill>
+    }
+  </div>
+</div>

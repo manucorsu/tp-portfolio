@@ -16,6 +16,7 @@
     <app-sm-icos-container [icons]="smIcons"></app-sm-icos-container>
   </div>
   <div class="sec-b">
+    <!--b1-->
     <h2 class="title" #sobreMi>La fuente del código</h2>
     <p class="intro-text">
       Me apasiona crear experiencias digitales accesibles y atractivas, cuidando cada detalle tanto
@@ -25,6 +26,12 @@
       encontrar cocinando, leyendo, cuidando mis plantas, jugando con mis gatos recorriendo Hyrule
       en busca de semillas Korok.
     </p>
+
+    <!--b2-->
+    <h2 class="title" #proyectosDestacados>Mi laboratorio digital</h2>
+    @for (p of projects; track p.name) {
+      <app-pproject [data]="p"></app-pproject><br />
+    }
   </div>
   <a href="/" class="back-link">volver al inicio</a>
 </div>
