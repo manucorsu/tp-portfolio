@@ -1,16 +1,21 @@
 <div class="poe-container">
   <div class="sec-a">
-    <div class="header-group">
-      <div class="avatar-wrapper">
-        <img src="pp-poe.jpg" alt="Poema Palermo" />
-      </div>
-      <div class="text-group">
-        <h1 class="title">Poema Palermo</h1>
-        <p class="subtitle">Villa Martelli, Argentina</p>
+    <div class="header-section">
+      <div class="header-group">
+        <div class="avatar-wrapper">
+          <img src="pp-poe.jpg" alt="Poema Palermo" />
+        </div>
+        <div class="text-group">
+          <h1 class="title">Poema Palermo</h1>
+          <p class="subtitle">Villa Martelli, Argentina</p>
+        </div>
       </div>
 
       <ul class="toc">
-        <li><a (click)="scrollTo(sobreMi)">Sobre mí</a></li>
+        <li><span (click)="scrollTo(sobreMi)">Sobre mí</span></li>
+        <li><span (click)="scrollTo(proyectosDestacados)">Proyectos destacados</span></li>
+        <li><span (click)="scrollTo(trayectoriaLaboral)">Trayectoria laboral</span></li>
+        <li><span (click)="scrollTo(formacion)">Formación</span></li>
       </ul>
     </div>
     <app-sm-icos-container [icons]="smIcons"></app-sm-icos-container>
@@ -32,6 +37,56 @@
     @for (p of projects; track p.name) {
       <app-pproject [data]="p"></app-pproject><br />
     }
+
+    <!--b3-->
+    <h2 class="title" #trayectoriaLaboral>Capítulos de mi camino</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-year">2020-2025</div>
+        <div class="timeline-content">Secundario con especialidad TIC en ORT</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2024-x</div>
+        <div class="timeline-content">Voluntariado MINU</div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-year">2026-x</div>
+        <div class="timeline-content">Ingeniería en Sistemas Informáticos en la UTN</div>
+      </div>
+    </div>
+
+    <!--b4-->
+    <h2 class="title" #formacion>Lo que sé</h2>
+
+    <h3 class="subsection-title">Institucional</h3>
+    <ul class="knowledge-list">
+      <li>Secundario ORT especialidad en TIC (2020-2025)</li>
+      <li>UTN Ingeniería en Sistemas Informáticos (2026-x)</li>
+    </ul>
+
+    <h3 class="subsection-title">Cursos y proyectos</h3>
+    <ul class="knowledge-list">
+      <li>
+        Participante del viaje institucional de ORT a Londres (2023), dos semanas de inmersión en
+        inglés
+      </li>
+      <li>Curso de programación web de EducacionIT (2024)</li>
+      <li>Organización del modelo ONU interno ORT 2025</li>
+      <li>Organización del modelo legislativo interno ORT 2025</li>
+    </ul>
+
+    <h3 class="subsection-title">Herramientas</h3>
+    <p class="knowledge-text">Unity, Figma, Excel, y Canva</p>
+
+    <h3 class="subsection-title">Lenguajes de programación</h3>
+    <p class="knowledge-text">Python, C#, C, HTML, CSS y JavaScript</p>
+
+    <h3 class="subsection-title">Idiomas</h3>
+    <ul class="knowledge-list">
+      <li>Español (Lengua materna)</li>
+      <li>Inglés (B2 certificado)</li>
+      <li>Italiano (aprendiendo)</li>
+    </ul>
   </div>
   <a href="/" class="back-link">volver al inicio</a>
 </div>
